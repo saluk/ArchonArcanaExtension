@@ -1,10 +1,10 @@
 ( function () {
 
 	/**
-	 * @class mw.boilerPlate
+	 * @class mw.aaDeckView
 	 * @singleton
 	 */
-	mw.boilerPlate = {
+	mw.aaDeckView = {
 	};
 
 }() );

@@ -17,7 +17,7 @@
  * @file
  */
 
-namespace MediaWiki\Extension\BoilerPlate;
+namespace MediaWiki\Extension\AADeckView;
 
 class Hooks implements \MediaWiki\Hook\BeforePageDisplayHook {
 
@@ -27,10 +27,10 @@ class Hooks implements \MediaWiki\Hook\BeforePageDisplayHook {
 	 * @param \Skin $skin
 	 */
 	public function onBeforePageDisplay( $out, $skin ) : void {
-		$config = $out->getConfig();
-		if ( $config->get( 'BoilerPlateVandalizeEachPage' ) ) {
-			$out->addHTML( '<p>BoilerPlate was here</p>' );
-			$out->addModules( 'oojs-ui-core' );
+		$out->addModules( 'ext.aaDeckView' );
+		if ( $out->getTitle()->getNsText() == "Deck" ) {
+			$out->setPageTitle( '' );
+			$out->clearHTML();
 		}
 	}
 

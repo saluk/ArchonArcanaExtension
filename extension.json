@@ -1,17 +1,17 @@
 {
-	"name": "BoilerPlate",
+	"name": "AADeckView",
 	"author": [
-		"Your Name"
+		"saluk"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:BoilerPlate",
-	"descriptionmsg": "boilerplate-desc",
+	"descriptionmsg": "aadeckview-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
 		"MediaWiki": ">= 1.32.0"
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\BoilerPlate\\": "includes/"
+		"MediaWiki\\Extension\\AADeckView\\": "includes/"
 	},
 	"config": {
 		"BoilerPlateEnableFoo": {
@@ -19,33 +19,35 @@
 			"value": true
 		},
 		"BoilerPlateVandalizeEachPage": {
-			"description": "Write 'BoilerPlate was here' on each page",
+			"description": "Write 'AADeckView was here' on each page",
 			"value": false
 		}
 	},
 	"HookHandlers": {
-		"BoilerPlateHooks": {
-			"class": "MediaWiki\\Extension\\BoilerPlate\\Hooks"
+		"AADeckViewHooks": {
+			"class": "MediaWiki\\Extension\\AADeckView\\Hooks"
 		}
 	},
 	"Hooks": {
-		"BeforePageDisplay": "BoilerPlateHooks"
+		"BeforePageDisplay": "AADeckViewHooks"
 	},
 	"MessagesDirs": {
-		"BoilerPlate": [
+		"AADeckView": [
 			"i18n"
 		]
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
-		"remoteExtPath": "BoilerPlate/resources"
+		"remoteExtPath": "AADeckView/resources"
 	},
 	"ResourceModules": {
-		"ext.boilerPlate": {
+		"ext.aaDeckView": {
+			"packageFiles": [
+				"ext.aaDeckView/main.js"
+			],
 			"dependencies": [],
 			"messages": [],
-			"styles": [],
-			"scripts": []
+			"styles": []
 		}
 	},
 	"manifest_version": 2
