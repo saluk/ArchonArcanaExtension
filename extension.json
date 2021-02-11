@@ -45,6 +45,43 @@
 			"packageFiles": [
 				"ext.aaDeckView/main.js"
 			],
+			"targets": ["mobile", "desktop"],
+			"dependencies": [],
+			"messages": [],
+			"styles": []
+		},
+		"ext.aaDeckView.indexCommon": {
+			"packageFiles": [
+				"ext.aaDeckView/main.indexCommon.js"
+			],
+			"targets": ["mobile", "desktop"],
+			"dependencies": [],
+			"messages": [],
+			"styles": []
+		},
+		"ext.aaDeckView.indexDeckSearch": {
+			"packageFiles": [
+				"ext.aaDeckView/main.indexDeckSearch.js"
+			],
+			"targets": ["mobile", "desktop"],
+			"dependencies": [],
+			"messages": [],
+			"styles": []
+		},
+		"ext.aaDeckView.indexDeckView": {
+			"packageFiles": [
+				"ext.aaDeckView/main.indexDeckView.js"
+			],
+			"targets": ["mobile", "desktop"],
+			"dependencies": [],
+			"messages": [],
+			"styles": []
+		},
+		"ext.aaDeckView.indexGallery": {
+			"packageFiles": [
+				"ext.aaDeckView/main.indexGallery.js"
+			],
+			"targets": ["mobile", "desktop"],
 			"dependencies": [],
 			"messages": [],
 			"styles": []
