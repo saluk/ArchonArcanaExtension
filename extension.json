@@ -50,6 +50,15 @@
 			"messages": [],
 			"styles": []
 		},
+		"ext.aaDeckView.indexQuick": {
+			"packageFiles": [
+				"ext.aaDeckView/main.indexQuick.js"
+			],
+			"targets": ["mobile", "desktop"],
+			"dependencies": [],
+			"messages": [],
+			"styles": []
+		},
 		"ext.aaDeckView.indexCommon": {
 			"packageFiles": [
 				"ext.aaDeckView/main.indexCommon.js"
